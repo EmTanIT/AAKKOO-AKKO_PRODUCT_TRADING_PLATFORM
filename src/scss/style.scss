@@ -2,6 +2,7 @@
 @import 'component/component2.scss';
 
 @import 'component/header.scss';
+@import 'component/banner.scss';
 @import 'component/component.scss';
 @import 'component/author.scss';
 @import 'component/moreakko.scss';
@@ -25,6 +26,7 @@ html{
     font-size: 62.5%;
     font-family: 'Quicksand', sans-serif;
     // font-family: 'Roboto', sans-serif;
+    scroll-behavior:smooth;
 }
 body{
     font-size: 1.6rem;
