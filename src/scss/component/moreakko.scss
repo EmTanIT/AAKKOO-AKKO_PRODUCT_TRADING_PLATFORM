@@ -1,0 +1,115 @@
+.moreakko{
+    text-align: center;
+    .moreakko__content{
+        display: block;
+        font-size: 22px;
+        font-weight: 700;
+        color: #9385BE;
+    }
+    .horizol-circle{
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0 2rem 0;
+        .moreakko__icon{
+            // border: 2px solid green;
+            width: 6rem;
+            height: 4rem;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .circle_icon{
+                display: block;
+                // border: 2px solid red;
+                width: 1rem;
+                height: 1rem;
+                border-radius: 50%;
+                background-color: #9385BE;
+            }
+            .circle_icon_middle{
+                width: 2rem;
+                height: 2rem;
+            }
+            &::before{
+                content: "";
+                display: block;
+                background-color: #9385BE;
+                height: 0.2rem;
+                width: 15rem;
+                position: absolute;
+                top: 50%;
+                right: 100%;
+            }
+            &::after{
+                content: "";
+                display: block;
+                background-color: #9385BE;
+                height: 0.2rem;
+                width: 15rem;
+                position: absolute;
+                top: 50%;
+                left: 100%;
+            }
+        }
+    }
+    
+    .moreakko__pic{
+        // border: 2px solid red;
+        width: 100%;
+        height: 50rem;
+        position: relative;
+        .moreakko__pic__top{
+            position: absolute;
+            // border: 2px solid blue;
+            height: 60%;
+            width: 100%;
+            top: 0%;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .moreakko__pic__bottom{
+            position: absolute;
+            // border: 2px solid green;
+            width: 100%;
+            height: 35%;
+            bottom: 0%;
+            display: flex;
+            justify-content: space-between;
+            .moreakko__pic_bottom_left{
+                // border: 2px solid gray;
+                width: 49%;
+                height: 100%;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .moreakko__pic_bottom_right{
+                // border: 2px solid gray;
+                width: 49%;
+                height: 100%;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .typeproduct__content{
+        padding: 4rem 0 0 0;
+        display: block;
+        font-size: 22px;
+        font-weight: 700;
+        color: #9385BE;
+    }
+    .typeproduct_pic{
+        width: 100%;
+        height: 20rem;
+        border: 2px solid red;
+    }
+}
