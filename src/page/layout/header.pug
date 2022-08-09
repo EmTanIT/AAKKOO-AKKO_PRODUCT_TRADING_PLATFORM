@@ -1,2 +1,25 @@
-//- code here
-script(type="module" src="../js/header.js") 
+.header 
+    .container 
+        .scroll-top__btn
+        .header__content 
+            .header__left 
+                .nav__block 
+                    .nav-brandlogo
+                        a.brandlogo(href="../page/index.html") Super
+                            span.brandlogo__span key
+                    ul.nav-menu__list 
+                        li.nav-menu__item
+                            a.nav-menu__link.actived(href="../page/index.html") Home  
+                        li.nav-menu__item
+                            a.nav-menu__link(href="#") Product
+                        li.nav-menu__item   
+                            a.nav-menu__link(href="#") About us 
+                        li.nav-menu__item
+                            a.nav-menu__link(href="#") Blog
+            .header__right
+                .phone__btn
+                    a.phone-btn__content(href="#") VN:
+                        span.phone-btn__sub-content (+86) 966 316 803
+                .more__btn
+                    a.more-btn__content(href="#") More Product
+script(src="../js/header.js" type="module") 
