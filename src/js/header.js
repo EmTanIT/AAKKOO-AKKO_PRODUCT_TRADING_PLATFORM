@@ -15,15 +15,19 @@ navItemList.forEach(item => {
         event.target.classList.add("actived")
         event.target.style.color = "#a30000"
     })
-    item.addEventListener('mouseover',event=>{
+    item.addEventListener('mouseover', event => {
         event.target.style.color = "#a30000"
     })
-    item.addEventListener('mouseout',event=>{
-        if (sindow.scrollY < 800){
-            event.target.style.color = '#fafafa'
-        }else{
-            event.target.style.color = '#fec8cd'
-        }
+    item.addEventListener('mouseout', event => {
+        navItemList.forEach(_item => {
+            if (window.scrollY < 800) {
+                _item.style.color = "#fafafa"
+            } else {
+                _item.style.color = "#fec8cd"
+            }
+        })
+        activedItem = document.querySelector('.actived')
+        activedItem.style.color = "#a30000"
     })
 })
 
