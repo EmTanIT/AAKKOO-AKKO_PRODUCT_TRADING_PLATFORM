@@ -107,10 +107,6 @@
                         text-decoration: none;
                         position: relative;
 
-                        &:hover {
-                            color: #a30000;
-                        }
-
                         &::after {
                             content: '';
                             display: block;

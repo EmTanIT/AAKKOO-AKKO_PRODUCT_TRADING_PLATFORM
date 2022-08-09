@@ -1,30 +1,39 @@
 let activedItem = document.querySelector('.actived')
 activedItem.style.color = "#a30000"
 
-document.addEventListener('scroll ', () => {
-    activedItem = document.querySelector('.actived')
-    activedItem.style.color = "#a30000"
-})
-
 const navItemList = document.querySelectorAll('.nav-menu__link')
-navItemList.forEach(item => item.addEventListener('click', event => {
-    navItemList.forEach(_item => {
-        _item.classList.remove("actived");
-        if (window.scrollY < 800) {
-            _item.style.color = "#fafafa"
-        } else {
-            _item.style.color = "#fec8cd"
+navItemList.forEach(item => {
+    item.addEventListener('click', event => {
+        navItemList.forEach(_item => {
+            _item.classList.remove("actived");
+            if (window.scrollY < 800) {
+                _item.style.color = "#fafafa"
+            } else {
+                _item.style.color = "#fec8cd"
+            }
+        })
+        event.target.classList.add("actived")
+        event.target.style.color = "#a30000"
+    })
+    item.addEventListener('mouseover',event=>{
+        event.target.style.color = "#a30000"
+    })
+    item.addEventListener('mouseout',event=>{
+        if (sindow.scrollY < 800){
+            event.target.style.color = '#fafafa'
+        }else{
+            event.target.style.color = '#fec8cd'
         }
     })
-    event.target.classList.add("actived")
-    event.target.style.color = "#a30000"
-}))
+})
 
 const topButton = document.querySelector('.scroll-top__btn')
 const header = document.querySelector('.header')
 const subBrandlogo = document.querySelector('.brandlogo__span')
 
 document.addEventListener('scroll', () => {
+    activedItem = document.querySelector('.actived')
+    activedItem.style.color = "#a30000"
     if (window.scrollY < 800) {
         header.style.backgroundColor = "#fec8cd";
         topButton.style.visibility = "hidden";
