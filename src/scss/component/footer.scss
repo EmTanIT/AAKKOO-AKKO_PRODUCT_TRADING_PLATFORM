@@ -1,0 +1,123 @@
+.footer{
+    .footer_content{
+        .footer_top{
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 2rem;
+            .footer_customer{
+                .menu_list{
+                    .menu_item{
+                        list-style-type: none;
+                        line-height: 2;
+                        .ahead{
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            color: #8071b3;
+                            margin-bottom: 1.25rem;
+                            margin-top: 2.5rem;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: #8071b3;
+                            &:hover{
+                                color: red;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer_about__akko{
+                .menu_list{
+                    .menu_item{
+                        list-style-type: none;
+                        line-height: 2;
+                        .ahead{
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            color: #8071b3;
+                            margin-bottom: 1.25rem;
+                            margin-top: 2.5rem;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: #8071b3;
+                            &:hover{
+                                color: red;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer_payment{
+                .menu_list{
+                    .menu_item{
+                        list-style-type: none;
+                        line-height: 2;
+                        .ahead{
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            color: #8071b3;
+                            margin-bottom: 1.25rem;
+                            margin-top: 2.5rem;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: #8071b3;
+                            &:hover{
+                                color: red;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer_follow{
+                .menu_list{
+                    .menu_item{
+                        list-style-type: none;
+                        line-height: 2;
+                        .ahead{
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            color: #8071b3;
+                            margin-bottom: 1.25rem;
+                            margin-top: 2.5rem;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: #8071b3;
+                            &:hover{
+                                color: red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer_center{
+            justify-content: space-between;
+            color: #8071b3;
+            padding: 2.5rem 0;
+            border-top: 1px solid #8071b3;
+            
+        }
+        .footer_bot{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2.5rem;
+            .footer_bot_item{
+                border-right: 1px solid #8071b3;
+                border-left: 1px solid #8071b3;
+                text-transform: uppercase;
+                padding: 0 25px;
+                a{
+                    text-decoration: none;
+                    display: block;
+                    color: #8071b3;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
