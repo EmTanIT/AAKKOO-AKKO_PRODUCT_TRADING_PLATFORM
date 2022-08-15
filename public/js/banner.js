@@ -1,0 +1,1 @@
+var splide=new Splide(".splide",{type:"loop",padding:"5rem",autoplay:!0});splide.mount();
