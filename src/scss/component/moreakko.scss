@@ -1,10 +1,11 @@
 .moreakko{
     text-align: center;
+
     .moreakko__content{
         display: block;
         font-size: 22px;
         font-weight: 700;
-        color: #9385BE;
+        color: #8A0640;
     }
     .horizol-circle{
         display: flex;
@@ -24,7 +25,7 @@
                 width: 1rem;
                 height: 1rem;
                 border-radius: 50%;
-                background-color: #9385BE;
+                background-color: #8A0640;
             }
             .circle_icon_middle{
                 width: 2rem;
@@ -33,7 +34,7 @@
             &::before{
                 content: "";
                 display: block;
-                background-color: #9385BE;
+                background-color: #8A0640;
                 height: 0.2rem;
                 width: 15rem;
                 position: absolute;
@@ -43,7 +44,7 @@
             &::after{
                 content: "";
                 display: block;
-                background-color: #9385BE;
+                background-color: #8A0640;
                 height: 0.2rem;
                 width: 15rem;
                 position: absolute;
@@ -113,9 +114,10 @@
         display: block;
         font-size: 22px;
         font-weight: 700;
-        color: #9385BE;
+        color: #8A0640;
     }
     .typeproduct_pic{
+        margin-bottom: 5rem;
         width: 100%;
         height: 20rem;
         // border: 2px solid red;

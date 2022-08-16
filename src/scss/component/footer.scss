@@ -12,13 +12,13 @@
                         .ahead{
                             text-transform: uppercase;
                             font-weight: 700;
-                            color: #8071b3;
+                            color: #8A0640;
                             margin-bottom: 1.25rem;
                             margin-top: 2.5rem;
                         }
                         a{
                             text-decoration: none;
-                            color: #8071b3;
+                            color: #8A0640;
                             &:hover{
                                 color: red;
                             }
@@ -34,13 +34,13 @@
                         .ahead{
                             text-transform: uppercase;
                             font-weight: 700;
-                            color: #8071b3;
+                            color: #8A0640;
                             margin-bottom: 1.25rem;
                             margin-top: 2.5rem;
                         }
                         a{
                             text-decoration: none;
-                            color: #8071b3;
+                            color: #8A0640;
                             &:hover{
                                 color: red;
                             }
@@ -56,13 +56,13 @@
                         .ahead{
                             text-transform: uppercase;
                             font-weight: 700;
-                            color: #8071b3;
+                            color: #8A0640;
                             margin-bottom: 1.25rem;
                             margin-top: 2.5rem;
                         }
                         a{
                             text-decoration: none;
-                            color: #8071b3;
+                            color: #8A0640;
                             &:hover{
                                 color: red;
                             }
@@ -78,13 +78,35 @@
                         .ahead{
                             text-transform: uppercase;
                             font-weight: 700;
-                            color: #8071b3;
+                            color: #8A0640;
                             margin-bottom: 1.25rem;
                             margin-top: 2.5rem;
                         }
                         a{
                             text-decoration: none;
-                            color: #8071b3;
+                            color: #8A0640;
+                            &:hover{
+                                color: red;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer_logitics{
+                .menu_list{
+                    .menu_item{
+                        list-style-type: none;
+                        line-height: 2;
+                        .ahead{
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            color: #8A0640;
+                            margin-bottom: 1.25rem;
+                            margin-top: 2.5rem;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: #8A0640;
                             &:hover{
                                 color: red;
                             }
@@ -93,26 +115,23 @@
                 }
             }
         }
-        .footer_center{
-            justify-content: space-between;
-            color: #8071b3;
-            padding: 2.5rem 0;
-            border-top: 1px solid #8071b3;
-            
-        }
+    
         .footer_bot{
             display: flex;
             justify-content: center;
             margin-bottom: 2.5rem;
+            .footer_center{
+                color: #8A0640;
+            }
             .footer_bot_item{
-                border-right: 1px solid #8071b3;
-                border-left: 1px solid #8071b3;
+                border-right: 1px solid #8A0640;
+                border-left: 1px solid #8A0640;
                 text-transform: uppercase;
                 padding: 0 25px;
                 a{
                     text-decoration: none;
                     display: block;
-                    color: #8071b3;
+                    color: #8A0640;
                     &:hover{
                         color: red;
                     }

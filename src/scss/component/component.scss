@@ -1,46 +1,82 @@
 .component{
-    .container{
-        // này là text nè
-        .text{
-            text-align: center;
-        }
+    .component_header{
+        text-align: center;
         .small-title{
             color: #8a064a;
-            font-size: 1.5rem;
-            padding-top: 5rem;
+            font-size: 1.6rem;
+            padding-top: 1.5rem;
             padding-bottom: 1.5rem;
             font-weight: bold;
         }
         .question{
             font-weight: bold;
-            font-size: 3.5rem;
+            font-size: 4rem;
             padding: 0rem 2rem;
         }
         .des{
-            padding: 2rem 10rem;
+            padding: 1rem 20rem;
+            font-size: 1.6rem;
         }
-        // này là mấy cái card nè
-        .card{
+    }
+    .container_body{
+        margin-top: 2rem;
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .component_card_container{
+            position: relative;
             display: flex;
-            padding-top: 2rem;
-            justify-content: space-around;
-        }
-        .img-block{
-            width: 40rem;
-            height: 40rem;
-        }
-        .img-block img{
-            width: 100%;
-            height: 100%;
-        }
-        .shadow{
-            box-shadow: 6px 6px #8a064a;
-        }
-        .animation{
-            &:hover{
-                transition: all .3s ease;
-                transform: translate(-1%,-1%);
-            }
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 10px;
+            .card{
+                position: relative;
+                max-width: 400px;
+                height: 315px;
+                background-color: #FFE3E8;
+                margin: 30px 20px;
+                padding: 20px 15px;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0 5px 20px rgba(0,0,0,.5);
+                transition: .3s ease-in-out;
+                &:hover{
+                    height: 450px;
+                }
+                .imgBx{
+                    position: relative;
+                    width: 320px;
+                    height: 320px;
+                    top: -60px;
+                    left: 25px;
+                    z-index: 1;
+                    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+                    img{
+                        max-width: 100%;
+                        border-radius: 4px;
+                    }
+                }
+                .content{
+                    position: relative;
+                    margin-top: -140px;
+                    padding: 10px 15px;
+                    text-align: center;
+                    color: #111;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: .3s ease-in-out;
+                }
+                &:hover{
+                    .content{
+                        visibility: visible;
+                        opacity: 1;
+                        margin-top: -40px;
+                        transition-delay: .3s;
+                    }
+                }
+            }  
         }
     }
 }
