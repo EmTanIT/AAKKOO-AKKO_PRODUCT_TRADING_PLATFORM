@@ -34,6 +34,7 @@ navItemList.forEach(item => {
 const topButton = document.querySelector('.scroll-top__btn')
 const header = document.querySelector('.header')
 const subBrandlogo = document.querySelector('.brandlogo__span')
+const navList = document.querySelector('.nav-menu__list')
 
 document.addEventListener('scroll', () => {
     activedItem = document.querySelector('.actived')
@@ -41,6 +42,7 @@ document.addEventListener('scroll', () => {
     if (window.scrollY < 800) {
         header.style.backgroundColor = "#fec8cd";
         topButton.style.visibility = "hidden";
+        navList.style.backgroundColor = "#fec8cd"
         navItemList.forEach(item => {
             item.style.color = "#fafafa";
         })
@@ -48,6 +50,7 @@ document.addEventListener('scroll', () => {
         activedItem.style.color = "#a30000"
         subBrandlogo.style.color = "#fafafa"
     } else {
+        navList.style.backgroundColor = "#fafafa"
         header.style.backgroundColor = "#fafafa"
         topButton.style.visibility = "visible"
         navItemList.forEach(item => {
