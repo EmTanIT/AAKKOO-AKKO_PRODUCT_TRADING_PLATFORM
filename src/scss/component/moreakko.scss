@@ -1,6 +1,5 @@
 .moreakko{
     text-align: center;
-
     .moreakko__content{
         display: block;
         font-size: 22px;
@@ -53,76 +52,69 @@
             }
         }
     }
-    
     .moreakko__pic{
         // border: 2px solid red;
-        width: 100%;
-        height: 50rem;
-        position: relative;
+        // display: flex;
+        max-width: 1320px;
+        height: 55rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         .moreakko__pic__top{
-            position: absolute;
-            // border: 2px solid blue;
-            height: 60%;
-            width: 100%;
-            top: 0%;
+            height: 300px;
+            width: 1320px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+            img{
+                display: block;
+                width: 100%;
+                height: 50rem;
+            }
+        }
+        .moreakko__pic_bottom_left{
+            width: 630px;
+            height: 17.5rem;
             overflow: hidden;
             img{
+                display: block;
                 width: 100%;
                 height: 100%;
             }
         }
-        .moreakko__pic__bottom{
-            position: absolute;
-            // border: 2px solid green;
-            width: 100%;
-            height: 35%;
-            bottom: 0%;
-            display: flex;
-            justify-content: space-between;
-            .moreakko__pic_bottom_left{
-                // border: 2px solid gray;
-                width: 49%;
+        .moreakko__pic_bottom_right{
+            width: 630px;
+            height: 17.5rem;
+            overflow: hidden;
+            img{
+                display: block;
+                width: 100%;
                 height: 100%;
-                overflow: hidden;
-                img{
-                    width: 100%;
-                    height: 100%;
-                }
             }
-            .moreakko__pic_bottom_right{
-                // border: 2px solid gray;
-                width: 49%;
-                height: 100%;
-                overflow: hidden;
-                img{
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-            .pic_hover{
-                transition: 0.3s;
-                &:hover{
-                        transition: 0.3s;
-                        transform: translate(0.3%,-0.3%);
-                }
-            }
-            
         }
+        .pic_hover{
+            transition: 0.3s;
+            &:hover{
+                    transition: 0.3s;
+                    transform: translate(0.3%,-0.3%);
+            }
+        }  
     }
     .typeproduct__content{
-        padding: 4rem 0 0 0;
+        // margin-top: 2rem;
         display: block;
         font-size: 22px;
         font-weight: 700;
         color: #8A0640;
     }
     .typeproduct_pic{
-        margin-bottom: 5rem;
-        width: 100%;
-        height: 20rem;
-        // border: 2px solid red;
+        // margin-bottom: 3rem;
+        max-width: 1320px;
+        height: auto;
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        position: relative;
         .pic_hover{
             transition: 0.3s;
             &:hover{
@@ -131,31 +123,107 @@
             }
         }
         .typeproduct_left{
-            width: 31.8%;
-            height: 100%;
+            display: block;
+            width: 400px;
+            height: 20rem;
+            margin: 0rem 1rem 3.5rem;
+            overflow: hidden;
             img{
+                display: block;
                 width: 100%;
                 height: 100%;
-                overflow: hidden;
+                
             }
         }
         .typeproduct_middle{
-            width: 31.8%;
-            height: 100%;
+            display: block;
+            width: 400px;
+            height: 20rem;
+            margin-top: 0;
+            margin: 0rem 1rem 3.5rem;
+            overflow: hidden;
             img{
+                display: block;
                 width: 100%;
                 height: 100%;
-                overflow: hidden;
+                
             }
         }
         .typeproduct_right{
-            width: 31.8%;
-            height: 100%;
+            display: block;
+            width: 400px;
+            height: 20rem;
+            margin-top: 0;
+            margin: 0rem 1rem 3.5rem;
+            overflow: hidden;
             img{
+                display: block;
                 width: 100%;
                 height: 100%;
-                overflow: hidden;
+                
             }
+        }
+    }
+    .button{
+        display: block;
+        border: none;
+        background-color: rgb(255,125,138);
+        width: 35rem;
+        height: 6rem;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        font-weight: 500;
+        font-size: 2.5rem;
+        color: white;
+        top: 2rem;
+        position: relative;
+        z-index: 1;
+        &::after{
+            content: "";
+            position: absolute;
+            background-color: white;
+            width: 0%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            transition: 0.3s;
+            z-index: -1;
+        }
+        &:hover{
+            &::after{
+                content: "";
+                position: absolute;
+                background-color: white;
+                width: 100%;
+                height: 100%;
+                right: 0;
+                top: 0;
+                transition: 0.3s;
+            }
+            color: #FF7D8A;
+            transition: 0.3s;
+        }
+    }
+}
+@media(max-width: 1320px) {
+    .moreakko__pic__top{
+        display: none;
+    }
+    .moreakko{
+        .moreakko__pic{
+            justify-content: center;
+            height: 42rem;
+        }
+    } 
+}
+@media(max-width: 1370px) {
+    .moreakko{
+        .typeproduct_pic{
+            display: flex;
+            justify-content: center;
+        }
+        .button{
+            display: block;
         }
     }
 }
