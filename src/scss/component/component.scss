@@ -1,4 +1,5 @@
 .component{
+    max-height: auto;
     .component_header{
         text-align: center;
         .small-title{
@@ -34,17 +35,19 @@
             .card{
                 position: relative;
                 max-width: 400px;
-                height: 315px;
+                height: 450px;
                 background-color: #FFE3E8;
                 margin: 30px 20px;
                 padding: 20px 15px;
                 display: flex;
                 flex-direction: column;
-                box-shadow: 0 5px 20px rgba(0,0,0,.5);
+                // box-shadow: 0 5px 20px rgba(0,0,0,.5);
                 transition: .3s ease-in-out;
                 border-radius: 6px;
                 &:hover{
-                    height: 450px;
+                    transform: scale(1.05);
+                    transition: .3s ease-in-out;
+                    box-shadow: 0 5px 20px rgba(183,43,44,.5);
                 }
                 .imgBx{
                     position: relative;
@@ -61,24 +64,13 @@
                 }
                 .content{
                     position: relative;
-                    margin-top: -140px;
+                    margin-top: -40px;
                     padding: 10px 20px;
                     text-align: center;
                     color: #111;
-                    visibility: hidden;
-                    opacity: 0;
-                    transition: .3s ease-in-out;
                 }
                 .content h2{
                     padding-bottom: .5rem;
-                }
-                &:hover{
-                    .content{
-                        visibility: visible;
-                        opacity: 1;
-                        margin-top: -40px;
-                        transition-delay: .3s;
-                    }
                 }
             }  
         }
