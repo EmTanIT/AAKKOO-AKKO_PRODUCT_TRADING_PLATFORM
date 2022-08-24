@@ -25,6 +25,7 @@
         justify-content: center;
         align-items: center;
         .component_card_container{
+            height: 520px;
             position: relative;
             display: flex;
             justify-content: center;
@@ -80,7 +81,17 @@
                         transition-delay: .3s;
                     }
                 }
+                
             }  
+        }
+    }
+}
+@media(max-width: 1280px) {
+    .component{
+        .container_body{
+            .component_card_container{
+                height: auto;
+            }
         }
     }
 }
