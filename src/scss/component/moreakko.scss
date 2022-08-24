@@ -95,7 +95,7 @@
             transition: 0.3s;
             &:hover{
                     transition: 0.3s;
-                    transform: translate(0.3%,-0.3%);
+                    transform: scale(1.05);
             }
         }  
     }
@@ -119,7 +119,7 @@
             transition: 0.3s;
             &:hover{
                     transition: 0.3s;
-                    transform: translate(0.3%,-0.3%);
+                    transform: scale(1.05);
             }
         }
         .typeproduct_left{

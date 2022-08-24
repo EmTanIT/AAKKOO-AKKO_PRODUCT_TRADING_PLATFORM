@@ -1,11 +1,10 @@
 .component{
-    max-height: auto;
     .component_header{
         text-align: center;
         .small-title{
-            color: #B72B2C;
+            color: #8a064a;
             font-size: 1.6rem;
-            padding-top: 2rem;
+            padding-top: 1.5rem;
             padding-bottom: 1.5rem;
             font-weight: bold;
         }
@@ -26,29 +25,26 @@
         justify-content: center;
         align-items: center;
         .component_card_container{
-            height: 520px;
             position: relative;
             display: flex;
             justify-content: center;
             align-items: flex-start;
             flex-wrap: wrap;
             padding: 10px;
+            height: 520px;
             .card{
                 position: relative;
                 max-width: 400px;
-                height: 450px;
+                height: 315px;
                 background-color: #FFE3E8;
                 margin: 30px 20px;
                 padding: 20px 15px;
                 display: flex;
                 flex-direction: column;
-                // box-shadow: 0 5px 20px rgba(0,0,0,.5);
+                box-shadow: 0 5px 20px rgba(0,0,0,.5);
                 transition: .3s ease-in-out;
-                border-radius: 6px;
                 &:hover{
-                    transform: scale(1.05);
-                    transition: .3s ease-in-out;
-                    box-shadow: 0 5px 20px rgba(183,43,44,.5);
+                    height: 450px;
                 }
                 .imgBx{
                     position: relative;
@@ -60,20 +56,19 @@
                     box-shadow: 0 5px 20px rgba(0,0,0,.2);
                     img{
                         max-width: 100%;
-                        border-radius: 6px;
+                        border-radius: 4px;
                     }
                 }
                 .content{
                     position: relative;
-                    margin-top: -40px;
-                    padding: 10px 20px;
+                    margin-top: -140px;
+                    padding: 10px 15px;
                     text-align: center;
                     color: #111;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: .3s ease-in-out;
                 }
-                .content h2{
-                    padding-bottom: .5rem;
-                }
-<<<<<<< HEAD
                 &:hover{
                     .content{
                         visibility: visible;
@@ -82,14 +77,11 @@
                         transition-delay: .3s;
                     }
                 }
-                
-=======
->>>>>>> 0e8e6d40b681dc4f287f91e6a7727d075ddce786
             }  
         }
     }
 }
-@media(max-width: 1280px) {
+@media(max-width: 1380px) {
     .component{
         .container_body{
             .component_card_container{
