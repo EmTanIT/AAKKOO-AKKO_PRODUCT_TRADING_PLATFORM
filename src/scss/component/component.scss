@@ -93,3 +93,10 @@
         }
     }
 }
+@media(max-width: 500px) {
+    .component{
+        .des{
+            padding: none;
+        }
+    }
+}
