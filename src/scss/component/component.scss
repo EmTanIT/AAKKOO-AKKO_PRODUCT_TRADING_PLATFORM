@@ -95,8 +95,10 @@
 }
 @media(max-width: 500px) {
     .component{
-        .des{
-            padding: none;
+        .component_header{
+            .des{
+                padding: none;
+            }
         }
     }
 }
